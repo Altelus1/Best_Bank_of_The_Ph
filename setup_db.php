@@ -2,6 +2,8 @@
 	
 	include("mysql_connect_init.php");
 	
+	$conn = mysqli_connect($host, $user, $password);	
+
 	$query = 'CREATE DATABASE bbp_db';
 	
 	mysqli_query($conn, $query);
